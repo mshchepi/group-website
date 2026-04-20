@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Claude Code local state
+.claude/
+
+# Working/reference files (not part of the published site)
+*.docx
+*.pptx
+/footer screen.png
+/tape lab screen.png
