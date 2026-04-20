@@ -56,7 +56,7 @@ img {
 
 /* ===== Navigation ===== */
 .navbar {
-    background: #F0C9CE;
+    background: var(--bg);
     padding: 2px 0 2px 8px;
     border-bottom: 1px solid #999;
     position: sticky;
