@@ -971,11 +971,14 @@ img {
     }
 
     .navbar .container {
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        gap: 2px;
     }
 
     .navbar .logo {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         letter-spacing: 0;
         height: auto;
         white-space: nowrap;
@@ -983,10 +986,9 @@ img {
     }
 
     .nav-toggle {
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;
+        transform: none;
+        padding: 4px;
     }
 
     /* Mobile nav */
