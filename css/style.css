@@ -13,7 +13,7 @@
     --border: #e0e4e8;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     --radius: 8px;
-    --max-width: 1100px;
+    --max-width: min(95vw, 1700px);
     --font: 'EB Garamond', Georgia, "Times New Roman", serif;
     --font-serif: 'EB Garamond', Georgia, "Times New Roman", serif;
 }
@@ -695,7 +695,7 @@ img {
 .member-card .photo {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: var(--radius);
     background: var(--dark-grey);
     overflow: hidden;
     border: none;
@@ -719,6 +719,8 @@ img {
     font-size: 1.4rem;
     margin-bottom: 4px;
     color: var(--bath-blue);
+    line-height: 1.3;
+    min-height: 2.6em;
 }
 
 .member-card .role {
@@ -726,6 +728,8 @@ img {
     font-size: 1.25rem;
     color: #000;
     margin-bottom: 0;
+    line-height: 1.3;
+    min-height: 2.6em;
 }
 
 .member-details {
@@ -762,7 +766,7 @@ img {
     width: 220px;
     min-width: 220px;
     height: 220px;
-    border-radius: 50%;
+    border-radius: var(--radius);
     overflow: hidden;
     border: none;
     flex-shrink: 0;
@@ -939,11 +943,26 @@ img {
     }
 
     .section {
-        padding: 40px 20px;
+        padding: 32px 16px 48px;
     }
 
     .section-title {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 4px 8px;
+    }
+
+    .navbar .logo {
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
     }
 
     /* Mobile nav */
@@ -961,6 +980,7 @@ img {
         background: var(--bg-light);
         padding: 8px 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 0;
     }
 
     .nav-links.open {
@@ -968,8 +988,24 @@ img {
     }
 
     .nav-links a {
-        padding: 12px 24px;
+        padding: 12px 20px;
+        font-size: 1.1rem;
         border-radius: 0;
+    }
+
+    /* Dropdown becomes inline on mobile */
+    .dropdown {
+        display: block;
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        padding-left: 16px;
+        min-width: 0;
+    }
+
+    .dropdown li a {
+        padding: 8px 20px;
+        font-size: 1rem;
     }
 
     .navbar .container {
@@ -979,17 +1015,132 @@ img {
     /* Contact stacks */
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
     }
 
     /* Cards single column */
     .card-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
 
+    .card {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.15rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    /* Team */
     .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
+    .member-card {
+        padding: 20px 16px;
+    }
+
+    .member-card .photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .member-card h3 {
+        font-size: 1.2rem;
+        min-height: 0;
+    }
+
+    .member-card .role {
+        font-size: 1.05rem;
+        min-height: 0;
+    }
+
+    /* Expanded member view: stack photo above text */
+    .member-card.expanded .member-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .member-details .detail-photo {
+        width: 160px;
+        min-width: 160px;
+        height: 160px;
+    }
+
+    .member-details .detail-name {
+        font-size: 1.2rem;
+    }
+
+    .member-details .detail-role {
+        font-size: 1.05rem;
+    }
+
+    .member-card .bio {
+        font-size: 1rem;
+    }
+
+    /* Research */
+    .research-area {
+        padding: 24px 0;
+    }
+
+    .research-area h2 {
+        font-size: 1.3rem;
+    }
+
+    .research-area p,
+    .research-content p,
+    .research-wrap p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .research-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .research-img {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .research-img-float {
+        float: none;
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+
+    /* Papers */
+    .paper-item {
+        padding: 16px 0;
+        font-size: 1rem;
+    }
+
+    .paper-item .date {
+        position: static;
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 6px;
+        transform: none;
+    }
+
+    .paper-title {
+        font-size: 1rem;
+    }
+
+    /* Footer */
     .footer .container {
         flex-direction: column;
         text-align: center;
@@ -1027,7 +1178,12 @@ img {
     /* Home page mobile */
     .welcome-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .welcome-text {
+        padding-left: 0;
         text-align: center;
     }
 
@@ -1039,18 +1195,38 @@ img {
         font-size: 1.8rem;
     }
 
+    .welcome-text p {
+        font-size: 1.2rem;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 16px;
         text-align: center;
     }
 
     .about-heading h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
     }
 
     .home-welcome,
     .home-about {
-        padding: 48px 20px;
+        padding: 36px 16px;
+    }
+
+    .home-funders {
+        padding: 32px 16px;
+    }
+
+    .home-funders h2 {
+        font-size: 1.4rem;
+    }
+
+    .funders-logos img {
+        max-height: 70px;
     }
 }
