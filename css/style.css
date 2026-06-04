@@ -1117,7 +1117,7 @@ img {
     .research-content p,
     .research-wrap p {
         font-size: 1.2rem;
-        text-align: left;
+        text-align: justify;
     }
 
     .research-content {
