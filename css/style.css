@@ -930,6 +930,10 @@ img {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+    html {
+        font-size: 112.5%;
+    }
+
     .hero {
         padding: 48px 20px;
     }
