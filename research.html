@@ -45,11 +45,11 @@
             <div class="research-area" id="proteomics">
                 <h2>&bull; Proximity Proteomics Platforms</h2>
                 <div class="research-content">
+                <img src="images/apex 2 2.png" alt="APEX2 proximity proteomics" class="research-img">
                 <div class="research-text">
                 <p>We are developing proximity proteomics technologies to resolve GPCR interactomes and find new potentially druggable protein interactions. For example, in this approach, the protein of interest is genetically fused with a small APEX2 tag, an engineered ascorbate peroxidase. The interactome of the protein of interest in ~20 nm proximity to the target is then biotinylated, enriched and coupled to quantitative mass spectrometry, followed by bioinformatics. For an example of APEX2 technology applied to a GPCR for luteinizing hormone, LHR, please refer to our latest paper in <a href="https://pubmed.ncbi.nlm.nih.gov/40378823/" target="_blank" rel="noopener" style="color:#000;text-decoration:underline;"><em>Cell Chem Bio</em> 2025</a>.</p>
                 <p>We are also interested in developing new proximity labelling methods, such as photoproximity labelling and light-controlled proximity labelling.</p>
                 </div>
-                <img src="images/apex 2 2.png" alt="APEX2 proximity proteomics" class="research-img">
                 </div>
             </div>
 
@@ -66,10 +66,10 @@
             <div class="research-area" id="chemical-tools">
                 <h2>&bull; Compartmentalised GPCR Signalling</h2>
                 <div class="research-content">
+                <img src="images/compartmentalised gpcrs.png?v=3" alt="Compartmentalised GPCR signalling" class="research-img">
                 <div class="research-text">
                 <p>Spatial compartmentalisation of GPCR signalling adds another layer of function and fine-tunes cellular signalling. Beyond their traditional plasma membrane locations, GPCRs are now found in various organelles, including endosomes, nuclei and mitochondria. Organelles offer distinct interactome environments; therefore, GPCR signalling in these compartments is distinct from plasma membrane signalling and leads to distinct physiological outcomes. Dissecting such compartmentalised signalling is a technical challenge, and we are trying to address it with high-precision chemical biology and proteomics. We are currently developing a new chemical biology platform to selectively target GPCRs in mitochondria and elucidate their biological roles in these organelles.</p>
                 </div>
-                <img src="images/compartmentalised gpcrs.png?v=3" alt="Compartmentalised GPCR signalling" class="research-img">
                 </div>
             </div>
         </div>
@@ -105,6 +105,12 @@
     <script>
         document.querySelector('.nav-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('open');
+            });
         });
     </script>
     <script src="https://cdn.counter.dev/script.js" data-id="842eea99-6d4f-4d9e-8744-f2e6c8674a0a" data-utcoffset="1"></script>
