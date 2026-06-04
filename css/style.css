@@ -996,8 +996,8 @@ img {
     }
 
     .nav-links a {
-        padding: 12px 20px;
-        font-size: 1.1rem;
+        padding: 6px 20px;
+        font-size: 1.4rem;
         border-radius: 0;
     }
 
@@ -1012,8 +1012,8 @@ img {
     }
 
     .dropdown li a {
-        padding: 8px 20px;
-        font-size: 1rem;
+        padding: 4px 20px;
+        font-size: 1.2rem;
     }
 
     .navbar .container {
