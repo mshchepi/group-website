@@ -970,11 +970,23 @@ img {
         padding: 4px 8px;
     }
 
+    .navbar .container {
+        justify-content: center;
+    }
+
     .navbar .logo {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         letter-spacing: 0;
         height: auto;
         white-space: nowrap;
+        margin-left: 0;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     /* Mobile nav */
