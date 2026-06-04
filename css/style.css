@@ -953,6 +953,12 @@ img {
     .section-subtitle {
         font-size: 1rem;
         margin-bottom: 32px;
+        text-align: left !important;
+    }
+
+    .about-text p {
+        hyphens: none;
+        overflow-wrap: normal;
     }
 
     /* Navbar */
@@ -961,8 +967,10 @@ img {
     }
 
     .navbar .logo {
-        font-size: 1.1rem;
-        letter-spacing: 0.5px;
+        font-size: 0.95rem;
+        letter-spacing: 0;
+        height: auto;
+        white-space: nowrap;
     }
 
     /* Mobile nav */
