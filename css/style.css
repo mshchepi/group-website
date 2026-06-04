@@ -1033,7 +1033,7 @@ img {
     }
 
     .contact-info p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* Cards single column */
@@ -1047,11 +1047,11 @@ img {
     }
 
     .card h3 {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
     }
 
     .card p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* Team */
@@ -1070,7 +1070,7 @@ img {
     }
 
     .member-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         min-height: 0;
     }
 
@@ -1093,7 +1093,7 @@ img {
     }
 
     .member-details .detail-name {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .member-details .detail-role {
@@ -1101,7 +1101,7 @@ img {
     }
 
     .member-card .bio {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* Research */
@@ -1116,7 +1116,7 @@ img {
     .research-area p,
     .research-content p,
     .research-wrap p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: left;
     }
 
@@ -1139,19 +1139,19 @@ img {
     /* Papers */
     .paper-item {
         padding: 16px 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .paper-item .date {
         position: static;
         display: block;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 6px;
         transform: none;
     }
 
     .paper-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* Footer */
